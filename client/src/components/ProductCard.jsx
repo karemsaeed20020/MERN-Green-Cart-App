@@ -53,7 +53,7 @@ const ProductCard = ({ product }) => {
           <div onClick={(e) => e.stopPropagation()} className="text-primary">
             {quantityInCart === 0 ? (
               <button
-                className="flex items-center justify-center cursor-pointer gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded text-indigo-600 font-medium"
+                className="flex items-center justify-center cursor-pointer gap-1 bg-primary/10 border border-primary/40 md:w-[80px] w-[64px] h-[34px] rounded text-primary font-medium"
                 onClick={() => addToCart(product._id)}
               >
                 <img src={assets.cart_icon} alt="cart_icon" />
