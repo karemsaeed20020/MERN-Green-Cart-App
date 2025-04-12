@@ -7,6 +7,7 @@ const ProductCard = ({ product }) => {
     addToCart,
     removeFromCart,
     cartItems,
+    navigate
   } = useAppContext();
 
   if (!product || !product._id) return null;
@@ -14,7 +15,7 @@ const ProductCard = ({ product }) => {
   const quantityInCart = cartItems?.[product._id] || 0;
 
   return (
-    <div className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white w-full">
+    <div onClick={() => {navigate(`/products/${product.category.toLowerCase()}/${product._id}`), scrollTo(0, 0)}} className="border border-gray-500/20 rounded-md md:px-4 px-3 py-2 bg-white w-full">
       <div className="group cursor-pointer flex items-center justify-center px-2">
         <img
           className="group-hover:scale-105 transition max-w-24 md:max-w-36"
