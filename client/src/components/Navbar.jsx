@@ -95,7 +95,7 @@ const Navbar = () => {
             className="w-6 opacity-80"
           />
           <button
-            onClick={() => navigate("cart")}
+            onClick={() => navigate("/cart")}
             className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full"
           >
             {getCartCount()}

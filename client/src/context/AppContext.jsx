@@ -93,7 +93,8 @@ export const AppContextProvider = ({ children }) => {
     searchQuery,
     setSearchQuery,
     getCartAmount,
-    getCartCount
+    getCartCount,
+    cartItems
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
